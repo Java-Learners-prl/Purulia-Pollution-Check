@@ -29,3 +29,14 @@ jobs:
         native-image: true
     - name: Build with Maven
       run: mvn -B package --file pom.xml
+      
+    - name: Building...
+      run: mvn client:build
+      
+    - name : Packaging....
+      run: mvn client:package
+    - name: Uploading...
+      uses: actions/upload-artifact@v2.2.0
+      with:
+        name: artifact
+        path: target/client/x86_64-linux/gvm

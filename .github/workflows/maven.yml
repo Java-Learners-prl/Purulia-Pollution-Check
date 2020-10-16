@@ -17,16 +17,9 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Setup GraalVM action
-  # You may pin to the exact commit or the version.
-  # uses: ayltai/setup-graalvm@cf54edea07234dcdf627020fe836f4a6cf548822
-      uses: ayltai/setup-graalvm@v1
-      with:
-    # The JDK version to be installed with GraalVM. E.g. 8, 11. See https://github.com/graalvm/graalvm-ce-builds/releases
-        java-version: 11
-    # The version of GraalVM to make available on PATH. E.g. 20.1.0, 19.3.2. See https://github.com/graalvm/graalvm-ce-builds/releases
-        graalvm-version: 20.2.0
-    # Install GraalVM Native Image
-        native-image: true
+    - name: Github Action for setup-graalvm
+      uses: rtc11/setup-graalvm@1.0
+      
     - name: Build with Maven
       run: mvn -B package --file pom.xml
       

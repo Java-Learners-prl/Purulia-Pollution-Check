@@ -47,6 +47,12 @@
                 <configuration>
                     <target>${client.target}</target>
                     <mainClass>com.srijan.javafx.pollution.Main</mainClass>
+<bundlesList>
+                        <list>com.srijan.javafx.pollution.Main</list>
+                    </bundlesList>
+                    <reflectionList>
+                        <list>com.srijan.javafx.pollution.Controller</list>
+                    </reflectionList>
                 </configuration>
             </plugin>
         </plugins>

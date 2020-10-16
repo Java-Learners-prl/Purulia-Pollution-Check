@@ -27,7 +27,7 @@ jobs:
     - name : Exporting
       uses: allenevans/set-env@v1.0.0
       with:
-          GRAALVM: $JAVA_HOME
+          GRAALVM_HOME: $JAVA_HOME
     - name: Building...
       run: mvn client:build
       

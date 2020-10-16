@@ -31,11 +31,11 @@ jobs:
     - name: Building...
       run: mvn client:build
       env:
-        GRAALVM_HOME: $JAVA_HOME
+        GRAALVM_HOME: /opt/hostedtoolcache/GraalVM/20.2.0-java11/x64
     - name : Packaging....
       run: mvn client:package
       env:
-        GRAALVM_HOME: $JAVA_HOME
+        GRAALVM_HOME: /opt/hostedtoolcache/GraalVM/20.2.0-java11/x64
     - name: Uploading...
       uses: actions/upload-artifact@v2.2.0
       with:

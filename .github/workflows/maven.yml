@@ -41,4 +41,4 @@ jobs:
       uses: actions/upload-artifact@v2.2.0
       with:
         name: artifact
-        path: target/client/x86_64-linux/gvm
+        path: target

@@ -30,9 +30,12 @@ jobs:
           GRAALVM_HOME: $JAVA_HOME
     - name: Building...
       run: mvn client:build
-      
+      env:
+        GRAALVM_HOME: $JAVA_HOME
     - name : Packaging....
       run: mvn client:package
+      env:
+        GRAALVM_HOME: $JAVA_HOME
     - name: Uploading...
       uses: actions/upload-artifact@v2.2.0
       with:

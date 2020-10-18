@@ -55,6 +55,7 @@
                         <list>javafx.scene.chart.CategoryAxis</list>
                         <list>javafx.scene.control.Menu</list>
                         <list>javafx.scene.chart.LineChart</list>
+                        <list>javafx.scene.chart.NumberAxis</list>
                     </reflectionList>
                 </configuration>
             </plugin>

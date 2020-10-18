@@ -59,6 +59,8 @@
                         <list>javafx.scene.control.ScrollPane</list>
                         <list>javafx.scene.control.Separator</list>
                         <list>javafx.scene.image.ImageView</list>
+                        <list>javafx.scene.chart.NumberAxis</list>
+                        <list>javafx.scene.control.MenuBar</list>
                     </reflectionList>
                 </configuration>
             </plugin>

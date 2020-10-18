@@ -55,7 +55,10 @@
                         <list>javafx.scene.chart.CategoryAxis</list>
                         <list>javafx.scene.control.Menu</list>
                         <list>javafx.scene.chart.LineChart</list>
-                        <list>javafx.scene.chart.NumberAxis</list>
+                        <list>javafx.scene.control.MenuItem</list>
+                        <list>javafx.scene.control.ScrollPane</list>
+                        <list>javafx.scene.control.Separator</list>
+                        <list>javafx.scene.image.ImageView</list>
                     </reflectionList>
                 </configuration>
             </plugin>

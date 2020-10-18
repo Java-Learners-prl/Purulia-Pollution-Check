@@ -61,6 +61,7 @@
                         <list>javafx.scene.image.ImageView</list>
                         <list>javafx.scene.chart.NumberAxis</list>
                         <list>javafx.scene.control.MenuBar</list>
+                        <list>javafx.geometry.Side</list>
                     </reflectionList>
                 </configuration>
             </plugin>
